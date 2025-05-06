@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 });
 
 colorPicker.addEventListener('input', (e) =>{
-    const color = e.target.value;
+    const color = e.target.value; //o target eh o ponto que o mouse ta selecionando
     document.documentElement.style.setProperty('--primary-color', color);
     localStorage.setItem('primaryColor', color);
 });
